@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wangsit - Page After Login</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="asset/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="asset/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<div id="dropdown1" class="dropdown-content" style="color: black;">
+  <div class="row">
+    <div class="col l3">
+      <img src="avatar.jpg" alt="" class="circle" width="90px" style="margin-top: 10px ">
+    </div>
+    <div class="col l5" style="margin-left: 20px">
+      <p>Naufal Andika
+        <br> andikaa.naufal@gmail.com</p>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div>
+    <a class="waves-effect waves-light btn" style="margin: 25px">logout</a>
+  </div>
+</div>
+
+<nav class="z-depth-1 transparent">
+  <div class="nav-wrapper white">
+    <img src="logo_transparent.png" alt="" width="50px" style="margin : 5px; margin-left: 30px">
+    <a href="#" class="brand-logo"> Wangsit</a>
+    <div id="nav-mobile" class="right hide-on-med-and-down" style="margin-right: 30px">
+      <a class="dropdown-trigger" href="#!" data-target="dropdown1">
+        <img src="avatar.jpg" alt="" class="circle responsive-img" width="50px" style="margin: 5px">
+      </a>
+    </div>
+  </div>
+</nav>
+
+<body style="background: url(Dull.jpg)">
+  <div class="row">
+    <div class="container">
+      <div class="col offset-l6 offset-m3 s12 m6 l6" style="margin-top : 40px; margin-bottom : 40px">
+        <div class="card z-depth-1">
+          <div class="card-content">
+            <span class="card-title" style=" margin-bottom: 40px;">
+              Verifikasi Akun Anda
+            </span>
+            <div class="row">
+              <div class="input-field col s12">
+                <input disabled value="Naufal Andika" id="disabled" type="text" class="validate">
+                <label class="active" for="disabled">Nama</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input disabled value="andikaa.naufal@gmail.com" id="disabled" type="text" class="validate">
+                <label class="active" for="disabled">Email</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input placeholder="Username" id="first_name" type="text" class="validate">
+                <label class="active" for="first_name">Username</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input placeholder="Password Baru" id="password" type="password" class="validate">
+                <label class="active" for="password">Password Baru</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input placeholder="Ketik Ulang Password Baru Anda" id="passwordConfirm" type="password">
+                <label class="active" id="lblPasswordConfirm" for="passwordConfirm" data-error="Password not match" data-success="Password Match">Ketik Ulang Password Baru Anda</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input placeholder="" id="first_name" type="text" class="active datepicker">
+                <label class="active" for="first_name">Tanggal Lahir</label>
+              </div>
+            </div>
+          </div>
+          <div class="card-action">
+            <a class="waves-effect waves-light btn-small">Verifikasi</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+</body>
+
+</html>

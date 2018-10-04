@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  	<title>KBMSI AUTH</title>
+
+  	<!-- CSS  -->
+  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,800i,700" rel="stylesheet">
+	<link href="asset/css/materialize.css" rel="stylesheet" type="text/css">
+	<link href="asset/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="asset/css/style.css" rel="stylesheet" type="text/css">  
+</head>
+
+<!-- dropdown untuk navbar logout -->
+<div id="dropdown1" class="dropdown-content" style="color: black;">
+  <div class="row">
+    <div class="col l2">
+      <img src="avatar.jpg" alt="" class="circle" width="50px" style="margin-top: 10px ">
+    </div>
+    <div class="col l5" style="margin-left: 20px">
+      <p>Naufal Andika
+        <br> andikaa.naufal@gmail.com</p>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div>
+    <a class="waves-effect waves-light btn" style="margin: 25px">logout</a>
+  </div>
+</div>
+<!-- dropdown untuk navbar logout -->
+<!-- Dropdown Test -->
+  <ul id='dropdown2' class='dropdown-content'>
+    <li><a href="#!" class="wangsit-text"><b>Blog</b></a></li>
+    <li><a href="#!" class="wangsit-text">Portfolio</a></li>
+    <li class="divider" tabindex="-1"></li>
+    <li><a href="#!" class="wangsit-text">Profile</a></li>
+    <li><a href="#!" class="wangsit-text"><i class="material-icons">settings</i>Setting</a></li>
+    <li><a href="#!" class="wangsit-text"><i class="material-icons">exit_to_app</i>Log Out</a></li>
+  </ul>
+<!-- Dropdown Test -->
+
+
+<div class="navbar-fixed">
+	<nav class="z-depth-1 white">
+	  <div class="nav-wrapper white">
+	   <div class="container">
+
+		<a href="#" class="brand-logo fontt"><img class="center-align" src="asset/img/logoo.png" style="width: 45px; " alt=""></a>
+		<ul class="right hide-on-med-and-down" style="margin-right: -150px;">
+
+			<li><a href=""><b>Academy</b></a></li>
+			<li><a href=""><b>Market</b></a></li>
+
+			<li><a class="dropdown-trigger" href="#!" data-target="dropdown2"><img class="circle" src="avatar.jpg" style="width: 40px; vertical-align:middle; margin-right: 10px; margin-top: -5px" alt=""><b>Mufadho</b><i class="material-icons right" style="margin-left: 10px;">arrow_drop_down</i></a></li>
+		</ul>
+		<div id="nav-mobile" class="right hide-on-med-and-down" style="margin-right: 30px">
+		</div>
+		</div>
+	  </div>
+	</nav>
+</div>
+<body>
+
+
+
+
+<div class="container">
+    <div class="row">
+      <div class="col offset-l3 offset-m3 s12 m6 l6" style="margin-top : 40px; margin-bottom : 40px">
+        <div class="card z-depth-1">
+          <div class="card-content" style="padding-top: 10px;">
+<!--
+           	<span style="margin-top: 0px;">
+           		<h4 class="fontt center-align" style="vertical-align: middle"><b><img class="center-align" src="asset/img/logoo.png" style="width: 50px; vertical-align: middle" alt=""> Wangsit</b></h4>
+           	</span>
+-->
+            <h6 class="fontt center-align" style=" margin-bottom: 20px; margin-top: 20px; font-size: 18px;">
+              <b>Verifikasi Akun Anda</b>
+            </h6>
+            <div class="row">
+              <div class="input-field col s12">
+                <input disabled value="Naufal Andika" id="disabled" type="text" class="validate">
+                <label class="active" for="disabled">Nama</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input disabled value="andikaa.naufal@gmail.com" id="disabled" type="text" class="validate">
+                <label class="active" for="disabled">Email</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input placeholder="165150401111075" id="first_name" type="number" class="validate">
+                <label class="active" for="first_name">NIM</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input placeholder="Username" id="first_name" type="text" class="validate">
+                <label class="active" for="first_name">Username</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input placeholder="Password Baru" id="password" type="password" class="validate">
+                <label class="active" for="password">Password Baru</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input placeholder="Ketik Ulang Password Baru Anda" id="passwordConfirm" type="password">
+                <label class="active" id="lblPasswordConfirm" for="passwordConfirm" data-error="Password not match" data-success="Password Match">Ketik Ulang Password Baru Anda</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input placeholder="" id="first_name" type="text" class="active datepicker">
+                <label class="active" for="first_name">Tanggal Lahir</label>
+              </div>
+            </div>
+            <div id="modal1" class="modal">
+				<div class="modal-content center-align">
+				  <h5>Data yang sudah di insert tidak dapat di ganti untuk saat ini, Apakah anda sudah yakin dengan data yang anda isi ? <br>
+					</h5>
+				  <div class="row" style="margin-top: 20px;">
+				  	<div class="col s6">
+				  		<button style="width: 100%" class=" btn btn-wangsit btn-large waves-effect red modal-close">Tidak</button>
+				  	</div>
+				  	<div class="col s6">
+				  		<button style="width: 100%" type="submit" name="btn_login" class=" btn btn-wangsit btn-large waves-effect green">Ya</button>
+				  	</div>
+				  </div>
+				  
+				  
+				</div>
+			</div>
+            <div class="row">
+            	<a href="#modal1" class="modal-trigger"><button class="col s12 btn btn-wangsit btn-large waves-effect wangsit-color">Verifikasi</button></a>
+			</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+ 
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="asset/js/materialize.js"></script>
+  <script src="asset/js/init.js"></script>
+	</body>
+</html>
+
