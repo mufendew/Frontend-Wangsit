@@ -71,6 +71,7 @@
 	<div class="container">
 		<div class="section">
 			<div class="row">
+				<form>
 				<div class="col s12">
 					<div class="card">
 						<div class="card-content" style="padding-bottom: 0px;">
@@ -79,11 +80,11 @@
 							</div>
 							<div class="row" style="margin-top: 10px;">
 								<div class="input-field col s12" style="margin-bottom: 0px;">
-									<input placeholder="Masukan Judul yang tepat untuk tulisan anda" id="input_text" type="text" class="validate" data-length="100">
+									<input name="judul" placeholder="Masukan Judul yang tepat untuk tulisan anda" id="input_text" type="text" class="validate" data-length="100">
 									<label class="active" for="first_name">Judul</label>
 								</div>
 								<div class="input-field col s12">
-									<select>
+									<select name="Katagori">
 									  <option value="" disabled selected>Choose your option</option>
 									  <option value="General">General</option>
 									  <option value="Personal">Personal</option>
@@ -91,15 +92,31 @@
 									</select>
 									<label>Katagori</label>
 							  	</div>
+							  	<div class="col s12">
+							  		<label>Sharing Option :</label>	
+							  	</div>
+							  	
+							  	<div class="input-field col s12">
+							  		  <div class="switch">
+									    <label>
+									      Public
+									      <input name="opsi" type="checkbox" value="PRVT">
+									      <span class="lever"></span>
+									      Private
+									    </label>
+									  </div>
+							  	</div>
 							</div>
 						</div>
 					</div>
-					
-					<div>
-						<textarea id="summernote"></textarea>
-					</div>
-					
 				</div>
+				<div class="col s12">
+						<textarea name="artikel" id="summernote" value="asjhdksadh"></textarea>
+				</div>
+				<div class="col s12 center-align" style="margin-top: 10px;">
+					<button type="Submit" class="btn btn-large wangsit-color">SUBMIT <i class="material-icons right">send</i></button>
+				</div>
+			</form>
 			</div>
 		</div>
 
@@ -111,6 +128,11 @@
 
 	<!--  Scripts-->
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script>
+		$(document).ready(function() {
+  			$('#summernote').summernote('code', '<p>asdasdasd</p><p>asdasdasdasd</p>');
+		});
+	</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-lite.js"></script>
 	<script src="asset/js/materialize.js"></script>
 	<script src="asset/js/init.js"></script>
