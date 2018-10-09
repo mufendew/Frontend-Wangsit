@@ -6,6 +6,7 @@
     $(".dropdown-trigger").dropdown({coverTrigger : false, constrainWidth : false});
 	$('.modal').modal();
 	$('select').formSelect();
+	$('.tabs').tabs();
 	$('#summernote').summernote({
 		placeholder: '',
 		tabsize: 5,
