@@ -324,18 +324,19 @@ li :before {
 .tabs .tab a{
   color:#eee;
   font-family: 'Montserrat', sans-serif; 
+  font-size : 0.8em;
 } /*Text*/
-
 .tabs .tab a:hover {
   background-color:#eee;
   color:#54264E;
 } /*Text color on hover*/
-
 .tabs .tab a.active {
   background-color:#54264E;
   color:#eee;
 } /*Background and text color when a tab is active*/
-
 .tabs .indicator {
   background-color:#eee;
 } /*Color of underline*/
+i.icon-wangsit{
+  color : #54264E;
+}

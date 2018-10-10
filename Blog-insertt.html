@@ -6,7 +6,7 @@
 	<title>BLOG INSERT</title>
 
 	<!-- WYSIWYG -->
-	
+
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-lite.css" rel="stylesheet">
 
 	<!-- CSS  -->
@@ -38,8 +38,30 @@
 <ul id="dropdown2" class="dropdown-content">
 	<li><a href="#!" class="wangsit-text"><b>Blog</b></a></li>
 	<li><a href="#!" class="wangsit-text">Portfolio</a></li>
-	<li class="divider" tabindex="-1"></li>
 	<li><a href="#!" class="wangsit-text">Profile</a></li>
+	<li class="divider" tabindex="-1"></li>
+	<li><a href="#!" class="wangsit-text"><i class="material-icons">settings</i>Setting</a></li>
+	<li><a href="#!" class="wangsit-text"><i class="material-icons">exit_to_app</i>Log Out</a></li>
+</ul>
+<!-- Sidenav Test -->
+<ul id="slide-out" class="sidenav">
+	<li>
+		<div class="user-view">
+			<div class="background">
+				<img src="asset/img/bg-bawah.jpg">
+			</div>
+			<a href=""><img class="circle" src="avatar.jpg"></a>
+			<span class="white-text name"><b>@ihramsyahfs</b></span>
+			<span class="white-text email">Ihramsyah Faisal S</span>
+		</div>
+	</li>
+	<li><a href="#!" class="wangsit-text"><i class="material-icons">school</i><b>Academy</b></a></li>
+	<li><a href="#!" class="wangsit-text"><i class="material-icons">shopping_cart</i><b>Market</b></a></li>
+	<li class="divider" tabindex="-1"></li>
+	<li><a href="#!" class="wangsit-text"><i class="material-icons">edit</i>Write Your Blog</a></li>
+	<li><a href="#!" class="wangsit-text"><i class="material-icons">work</i>Portfolio</a></li>
+	<li class="divider" tabindex="-1"></li>
+	<li><a href="#!" class="wangsit-text"><i class="material-icons">person</i>Profile</a></li>
 	<li><a href="#!" class="wangsit-text"><i class="material-icons">settings</i>Setting</a></li>
 	<li><a href="#!" class="wangsit-text"><i class="material-icons">exit_to_app</i>Log Out</a></li>
 </ul>
@@ -50,12 +72,14 @@
 	<nav class="z-depth-1 white">
 		<div class="nav-wrapper white">
 			<div class="container">
-				<a href="#" class="brand-logo fontt"><img class="center-align" src="asset/img/logoo.png" style="width: 45px; vertical-align: middle" alt=""></a>
+				<a href="#" data-target="slide-out" class="sidenav-trigger hide-on-large-only">
+					<i class="material-icons icon-wangsit">menu</i>
+				</a>
+				<a href="#" class="brand-logo fontt"><img class="center-align" src="asset/img/logoo.png" style="width: 45px; vertical-align: middle"
+					 alt=""></a>
 				<ul class="right hide-on-med-and-down" style="margin-right: -100px;">
-
 					<li><a href=""><b>Academy</b></a></li>
 					<li><a href=""><b>Market</b></a></li>
-
 					<li><a class="dropdown-trigger" href="#!" data-target="dropdown2"><img class="circle" src="avatar.jpg" style="width: 40px; vertical-align:middle; margin-right: 10px; margin-top: -5px"
 							 alt=""><b>Mufadho</b><i class="material-icons right" style="margin-left: 10px;">arrow_drop_down</i></a></li>
 				</ul>
@@ -63,7 +87,7 @@
 				</div>
 			</div>
 		</div>
-	</nav>		
+	</nav>
 </div>
 
 <body>
@@ -71,55 +95,56 @@
 		<div class="section">
 			<div class="row">
 				<form>
-				<div class="col s12">
-					<div class="card">
-						<div class="card-content" style="padding-bottom: 0px;">
-							<div class="card-title">
-								<b>Blog Post</b>
-							</div>
-							<div class="row" style="margin-top: 10px;">
-								<div class="input-field col s12" style="margin-bottom: 0px;">
-									<input name="judul" placeholder="Masukan Judul yang tepat untuk tulisan anda" id="input_text" type="text" class="validate" data-length="100">
-									<label class="active" for="first_name">Judul</label>
+					<div class="col s12">
+						<div class="card">
+							<div class="card-content" style="padding-bottom: 0px;">
+								<div class="card-title">
+									<b>Blog Post</b>
 								</div>
-								<div class="input-field col s12">
-									<select name="Katagori">
-									  <option value="" disabled selected>Choose your option</option>
-									  <option value="General">General</option>
-									  <option value="Personal">Personal</option>
-									  <option value="Akademik">Akademik</option>
-									</select>
-									<label>Katagori</label>
-							  	</div>
-							  	<div class="col s12">
-							  		<label>Sharing Option :</label>	
-							  	</div>
-							  	
-							  	<div class="input-field col s12">
-							  		  <div class="switch">
-									    <label>
-									      Public
-									      <input name="opsi" type="checkbox" value="PRVT">
-									      <span class="lever"></span>
-									      Private
-									    </label>
-									  </div>
-							  	</div>
+								<div class="row" style="margin-top: 10px;">
+									<div class="input-field col s12" style="margin-bottom: 0px;">
+										<input name="judul" placeholder="Masukan Judul yang tepat untuk tulisan anda" id="input_text" type="text"
+										 class="validate" data-length="100">
+										<label class="active" for="first_name">Judul</label>
+									</div>
+									<div class="input-field col s12">
+										<select name="Katagori">
+											<option value="" disabled selected>Choose your option</option>
+											<option value="General">General</option>
+											<option value="Personal">Personal</option>
+											<option value="Akademik">Akademik</option>
+										</select>
+										<label>Katagori</label>
+									</div>
+									<div class="col s12">
+										<label>Sharing Option :</label>
+									</div>
+
+									<div class="input-field col s12">
+										<div class="switch">
+											<label>
+												Public
+												<input name="opsi" type="checkbox" value="PRVT">
+												<span class="lever"></span>
+												Private
+											</label>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col s12">
+					<div class="col s12">
 						<textarea name="artikel" id="summernote" value="asjhdksadh"></textarea>
-				</div>
-				<div class="col s12 center-align" style="margin-top: 10px;">
-					<button type="Submit" class="btn btn-large wangsit-color">SUBMIT <i class="material-icons right">send</i></button>
-				</div>
-			</form>
+					</div>
+					<div class="col s12 center-align" style="margin-top: 10px;">
+						<button type="Submit" class="btn btn-large wangsit-color">SUBMIT <i class="material-icons right">send</i></button>
+					</div>
+				</form>
 			</div>
 		</div>
 
-		
+
 	</div>
 
 
@@ -128,8 +153,8 @@
 	<!--  Scripts-->
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script>
-		$(document).ready(function() {
-  			$('#summernote').summernote('code', '<p>asdasdasd</p><p>asdasdasdasd</p>');
+		$(document).ready(function () {
+			$('#summernote').summernote('code', '<p>asdasdasd</p><p>asdasdasdasd</p>');
 		});
 	</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-lite.js"></script>

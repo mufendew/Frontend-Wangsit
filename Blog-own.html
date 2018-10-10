@@ -34,11 +34,35 @@
 <ul id="dropdown2" class="dropdown-content">
 	<li><a href="#!" class="wangsit-text"><b>Blog</b></a></li>
 	<li><a href="#!" class="wangsit-text">Portfolio</a></li>
-	<li class="divider" tabindex="-1"></li>
 	<li><a href="#!" class="wangsit-text">Profile</a></li>
+	<li class="divider" tabindex="-1"></li>
 	<li><a href="#!" class="wangsit-text"><i class="material-icons">settings</i>Setting</a></li>
 	<li><a href="#!" class="wangsit-text"><i class="material-icons">exit_to_app</i>Log Out</a></li>
 </ul>
+
+<!-- Sidenav Test -->
+<ul id="slide-out" class="sidenav">
+	<li>
+		<div class="user-view">
+			<div class="background">
+				<img src="asset/img/bg-bawah.jpg">
+			</div>
+			<a href=""><img class="circle" src="avatar.jpg"></a>
+			<span class="white-text name"><b>@ihramsyahfs</b></span>
+			<span class="white-text email">Ihramsyah Faisal S</span>
+		</div>
+	</li>
+	<li><a href="#!" class="wangsit-text"><i class="material-icons">school</i><b>Academy</b></a></li>
+	<li><a href="#!" class="wangsit-text"><i class="material-icons">shopping_cart</i><b>Market</b></a></li>
+	<li class="divider" tabindex="-1"></li>
+	<li><a href="#!" class="wangsit-text"><i class="material-icons">edit</i>Write Your Blog</a></li>
+	<li><a href="#!" class="wangsit-text"><i class="material-icons">work</i>Portfolio</a></li>
+	<li class="divider" tabindex="-1"></li>
+	<li><a href="#!" class="wangsit-text"><i class="material-icons">person</i>Profile</a></li>
+	<li><a href="#!" class="wangsit-text"><i class="material-icons">settings</i>Setting</a></li>
+	<li><a href="#!" class="wangsit-text"><i class="material-icons">exit_to_app</i>Log Out</a></li>
+</ul>
+
 <!-- Dropdown Test -->
 
 
@@ -46,7 +70,9 @@
 	<nav class="z-depth-1 white">
 		<div class="nav-wrapper white">
 			<div class="container">
-
+				<a href="#" data-target="slide-out" class="sidenav-trigger hide-on-large-only">
+					<i class="material-icons icon-wangsit">menu</i>
+				</a>
 				<a href="#" class="brand-logo fontt"><img class="center-align" src="asset/img/logoo.png" style="width: 45px; vertical-align: middle"
 					 alt=""></a>
 				<ul class="right hide-on-med-and-down" style="margin-right: -100px;">
@@ -69,6 +95,9 @@
 		<div class="section">
 			<div class="row">
 				<div class="col s12 l8">
+					<div class="card hide-on-large-only">
+						<a href="" class="btn btn-large" style="width: 100%;"><i class="material-icons right">edit</i>Add your blog</a>
+					</div>
 					<div class="card">
 						<div class="card-content" style="padding-bottom: 50px;">
 							<div class="card-title left">Java 11 Launch</div>
@@ -189,7 +218,7 @@
 					</div>
 				</div>
 				<div class="col l4 s12">
-					<div class="card">
+					<div class="card hide-on-med-and-down">
 						<a href="" class="btn btn-large" style="width: 100%;"><i class="material-icons right">edit</i>Add your blog</a>
 					</div>
 					<div class="card">
