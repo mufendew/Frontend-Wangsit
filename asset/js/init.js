@@ -6,12 +6,34 @@
     $(".dropdown-trigger").dropdown({coverTrigger : false, constrainWidth : false});
 	$('.modal').modal();
 	$('select').formSelect();
+	$('.tabs').tabs();
 	$('#summernote').summernote({
 		placeholder: '',
 		tabsize: 5,
 		height: 200
 	});
 	$('input#input_text').characterCounter();
+	$('.owl-carousel').owlCarousel({
+		loop: true,
+		margin: 10,
+		responsiveClass: true,
+		responsive: {
+		  0: {
+			items: 1,
+			nav: true
+		  },
+		  600: {
+			items: 3,
+			nav: false
+		  },
+		  1000: {
+			items: 3,
+			nav: false,
+			loop: false,
+			margin: 10
+		  }
+		}
+	  });
 	 
     $('.datepicker').datepicker({
 	showClearBtn : true,
